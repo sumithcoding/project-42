@@ -33,7 +33,12 @@ function draw(){
     pop()
 
     //drawing mins hand
-   
+   push();
+   rotate(mnAngle);
+   stroke("yellow")
+   strokeWeight(7);
+   line(0,0,70,0);
+   pop();
 
     //drawing hr hand
     push();
@@ -53,7 +58,8 @@ function draw(){
     stroke(255,0,0);
     arc(0,0,300,300,0,scAngle);
     //Minutes
-   
+   stroke("yellow");
+   arc(0,0,280,280,0,mnAngle);
     //Hour
     stroke(0,0,255);
     arc(0,0,260,260,0,hrAngle);
